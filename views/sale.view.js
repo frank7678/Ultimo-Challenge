@@ -1,5 +1,11 @@
 const getView = (properties) => `
   <h2>Propiedades en venta</h2>
+  <select name="sector">
+    <option value="Banda Norte">Banda Norte</option>
+    <option value="Bimaco">Bimaco</option>
+    <option value="Castelli">Castelli</option>
+    <option value="Centro">Centro</option>
+  </select>
   <div class="propiedades">
     ${
       properties.map((property) => (`

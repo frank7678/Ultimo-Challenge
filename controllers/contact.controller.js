@@ -8,7 +8,8 @@ const validateContactForm = ([
   check('email', 'El email es requerido.').not().isEmpty(),
   check('email', 'El email no es válido.').isEmail(),
   check('subject', 'El asunto es requerido.').not().isEmpty(),
-  check('message', 'El mensaje es requerido.').not().isEmpty()
+  check('message', 'El mensaje es requerido.').not().isEmpty(),
+  check('telefono', 'El telefono es requerido.').not().isEmpty(),
 ]);
 
 // POST

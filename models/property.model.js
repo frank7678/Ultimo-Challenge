@@ -5,7 +5,10 @@ const PropertySchema = Schema({
   description: String,
   slug: String,
   type: String,
-  currency:String,
+  currency: {
+    type: String,
+    enum: ['ARS', 'USD']
+  },
   price: String,
   featured: Boolean,
   photo:String,

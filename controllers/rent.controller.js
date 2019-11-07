@@ -6,9 +6,9 @@ const renderRentSection = async (req, res) => {
     // const sector = req.query.sector;
     const { sector } = req.query;
     let filters = { type: 'rent' };
-    if (sector) {
-      filters = { ...filters, sector};
-    }
+    //if (sector) {
+    //  filters = { ...filters, sector};
+    //}
     const properties = await propertyModel.find(filters);
     return rentView.getView(properties);
   } catch (error) {
